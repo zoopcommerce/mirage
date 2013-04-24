@@ -1,0 +1,28 @@
+{
+    "name": "zoopcommerce/google-bar-chart",
+    "type": "library",
+    "description": "PHP wrapper for Google image charts",
+    "keywords": ["charts", "graphs"],
+    "homepage": "http://github.com/zoopcommerce/google-bar-chart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Stuart",
+            "email": "josh.stuart@zoopcommerce.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Rémi Lanvin",
+            "email": "remi@cloudconnected.fr",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Zoop\\": "src/"
+        }
+    }
+}
