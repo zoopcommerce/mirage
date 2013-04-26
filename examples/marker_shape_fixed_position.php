@@ -1,20 +1,20 @@
 <?php
 
-require '../lib/GoogleChart.php';
-require '../lib/markers/GoogleChartShapeMarker.php';
+require '../lib/Chart.php';
+require '../lib/markers/ChartShapeMarker.php';
 
 $values = array();
 for ($i = 0; $i <= 10; $i += 1) {
 	$values[] = rand(20,80);
 }
 
-$chart = new GoogleChart('lc', 500, 200);
+$chart = new Chart('lc', 500, 200);
 $chart->setScale(0,100);
-$data = new GoogleChartData($values);
+$data = new ChartData($values);
 $chart->addData($data);
 
 // a fixed position marker
-$marker = new GoogleChartShapeMarker(GoogleChartShapeMarker::DIAMOND);
+$marker = new ChartShapeMarker(ChartShapeMarker::DIAMOND);
 $marker->setColor('ff0000');
 $marker->setFixedPosition(0.5,0.5);
 $chart->addMarker($marker);

@@ -1,8 +1,8 @@
 <?php
 
-require '../lib/GoogleChart.php';
-require '../lib/markers/GoogleChartTextMarker.php';
-require '../lib/markers/GoogleChartShapeMarker.php';
+require '../lib/Chart.php';
+require '../lib/markers/ChartTextMarker.php';
+require '../lib/markers/ChartShapeMarker.php';
 
 $values = array(
 	array(),
@@ -17,49 +17,49 @@ for ($i = 0; $i <= $n; $i += 1) {
 	$values[2][] = rand(100 - ($i+10),100 - 10*$i);
 }
 
-$chart = new GoogleChart('lc', 600, 300);
+$chart = new Chart('lc', 600, 300);
 $chart->setGridLines(10,10);
 $chart->setLegendPosition('r');
 //~ $chart->setMargin(50);
 $chart->setLegendSize(150, 20);
 $chart->setFill('ffffcc');
-$chart->setGradientFill(45, array('cccccc', 'ffffff', 'cccccc'), GoogleChart::CHART_AREA);
+$chart->setGradientFill(45, array('cccccc', 'ffffff', 'cccccc'), Chart::CHART_AREA);
 $chart->setTitle('Us versus the others.');
 $chart->setTitleColor('999999')->setTitleSize(20);
 
-$line = new GoogleChartData($values[0]);
+$line = new ChartData($values[0]);
 $line->setLegend('Us');
 $chart->addData($line);
 
-$marker = new GoogleChartShapeMarker(GoogleChartShapeMarker::X);
+$marker = new ChartShapeMarker(ChartShapeMarker::X);
 $marker->setData($line);
 $marker->setColor('6699cc');
 $chart->addMarker($marker);
 
-$marker = new GoogleChartTextMarker(GoogleChartTextMarker::VALUE);
+$marker = new ChartTextMarker(ChartTextMarker::VALUE);
 $marker->setData($line);
 $chart->addMarker($marker);
 
-$line = new GoogleChartData($values[1]);
+$line = new ChartData($values[1]);
 $line->setDash(2,2);
 $line->setColor('6699cc');
 $chart->addData($line);
 
 
-$line = new GoogleChartData($values[2]);
+$line = new ChartData($values[2]);
 $line->setLegend('The others');
 $line->setColor('ff0000');
 $chart->addData($line);
 
-$marker = new GoogleChartShapeMarker(GoogleChartShapeMarker::CIRCLE);
+$marker = new ChartShapeMarker(ChartShapeMarker::CIRCLE);
 $marker->setData($line);
 $marker->setColor('ff0000');
 $chart->addMarker($marker);
 
-$y_axis = new GoogleChartAxis('y');
+$y_axis = new ChartAxis('y');
 $chart->addAxis($y_axis);
 
-$x_axis = new GoogleChartAxis('x');
+$x_axis = new ChartAxis('x');
 $x_axis->setTickMarks(5);
 $x_axis->setDrawLine(false);
 $x_axis->setTickColor('ff0000');

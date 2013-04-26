@@ -1,19 +1,19 @@
 <?php
 
-require '../lib/GoogleChart.php';
-require '../lib/markers/GoogleChartTextMarker.php';
+require '../lib/Chart.php';
+require '../lib/markers/ChartTextMarker.php';
 
 $values = array();
 for ($i = 0; $i <= 10; $i += 1) {
 	$values[] = rand(20,80);
 }
 
-$chart = new GoogleChart('bvs', 500, 200);
+$chart = new Chart('bvs', 500, 200);
 $chart->setScale(0,100);
-$data = new GoogleChartData($values);
+$data = new ChartData($values);
 $chart->addData($data);
 
-$marker = new GoogleChartTextMarker();
+$marker = new ChartTextMarker();
 $marker->setData($data);
 $chart->addMarker($marker);
 

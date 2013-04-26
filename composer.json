@@ -1,7 +1,7 @@
 {
     "name": "zoopcommerce/google-image-charts",
     "type": "library",
-    "description": "PHP wrapper for Google image charts",
+    "description": "PHP wrapper for  image charts",
     "keywords": ["charts", "graphs"],
     "homepage": "http://github.com/zoopcommerce/google-bar-chart",
     "license": "MIT",

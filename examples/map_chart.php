@@ -1,9 +1,9 @@
 <?php
 
-require '../lib/GoogleMapChart.php';
+require '../lib/MapChart.php';
 
-$chart = new GoogleMapChart(440,220);
-$chart->addData(new GoogleChartData(array(
+$chart = new MapChart(440,220);
+$chart->addData(new ChartData(array(
 	'FR' => 20,
 	'FI' => 30,
 	'GB' => 50,

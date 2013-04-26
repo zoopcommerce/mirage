@@ -1,18 +1,18 @@
 <?php
 
-require '../lib/GoogleChart.php';
-require '../lib/markers/GoogleChartLineMarker.php';
+require '../lib/Chart.php';
+require '../lib/markers/ChartLineMarker.php';
 
 $values = array();
 for ($i = 0; $i <= 10; $i += 1) {
 	$values[] = rand(0,100);
 }
 
-$chart = new GoogleChart('bvs', 500, 200);
-$data = new GoogleChartData($values);
+$chart = new Chart('bvs', 500, 200);
+$data = new ChartData($values);
 $chart->addData($data);
 
-$marker = new GoogleChartLineMarker();
+$marker = new ChartLineMarker();
 $marker->setData($data);
 $chart->addMarker($marker);
 

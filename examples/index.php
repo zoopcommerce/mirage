@@ -3,7 +3,7 @@
  
 <head profile="http://gmpg.org/xfn/11"> 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-	<title>GoogleChart PHP Library - Examples</title> 
+	<title>Chart PHP Library - Examples</title> 
 </head>
 
 <body>

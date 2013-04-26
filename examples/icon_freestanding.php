@@ -1,8 +1,8 @@
 <?php
 
-require '../lib/icons/GoogleChartIconNote.php';
+require '../lib/icons/ChartIconNote.php';
 
-$chart = new GoogleChartIconNote('Hello world');
+$chart = new ChartIconNote('Hello world');
 $chart->setTitle('Example');
 $chart->setTextColor('D01F3C');
 

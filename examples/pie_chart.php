@@ -1,28 +1,28 @@
 <?php
 
-require '../lib/GooglePieChart.php';
+require '../lib/PieChart.php';
 
 $values = array('Success' => 20, 'Failure' => 75, 'Unknow' => 5);
 
-//~ $chart = new GooglePieChart('pc', 500, 200);
+//~ $chart = new PieChart('pc', 500, 200);
 
-//~ $data = new GoogleChartData($values);
+//~ $data = new ChartData($values);
 //~ $data->setLabelsAuto();
 //~ $data->setLegend('Foo');
 //~ $chart->addData($data);
 
-//~ $data = new GoogleChartData(array(50,50));
+//~ $data = new ChartData(array(50,50));
 //~ $data->setLabels(array('Foo','Bar'));
 //~ $data->setLegend('Foo');
 //~ $chart->addData($data);
 
-$chart = new GooglePieChart('pc', 500, 200);
-$chart->addData(new GoogleChartData(array(10,20,30)));
+$chart = new PieChart('pc', 500, 200);
+$chart->addData(new ChartData(array(10,20,30)));
 
-$data = new GoogleChartData(array(50,50));
+$data = new ChartData(array(50,50));
 $chart->addData($data);
 		
-$chart->setQueryMethod(GoogleChartApi::GET);
+$chart->setQueryMethod(ChartApi::GET);
 $data->setLabels(array('Foo','Bar'));
 
 if ( isset($_GET['debug']) ) {
