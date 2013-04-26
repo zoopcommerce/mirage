@@ -1,5 +1,5 @@
 {
-    "name": "zoopcommerce/google-bar-chart",
+    "name": "zoopcommerce/google-image-charts",
     "type": "library",
     "description": "PHP wrapper for Google image charts",
     "keywords": ["charts", "graphs"],
