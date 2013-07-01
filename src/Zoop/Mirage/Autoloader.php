@@ -1,6 +1,6 @@
 <?php
 
-namespace Zoop\Google\ImageCharts;
+namespace Zoop\Mirage;
 
 /**
  * Autoloads ImageCharts classes.
@@ -23,7 +23,7 @@ class Autoloader {
      * @param string $class A class name.
      */
     public static function autoload($class) {
-        if (0 !== strpos($class, 'ImageCharts')) {
+        if (0 !== strpos($class, 'Mirage')) {
             return;
         }
         die(var_dump($class));

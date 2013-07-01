@@ -1,9 +1,9 @@
 {
-    "name": "zoopcommerce/google-image-charts",
+    "name": "zoopcommerce/mirage",
     "type": "library",
-    "description": "PHP wrapper for  image charts",
+    "description": "PHP wrapper for Google Charts Tools: Image Charts",
     "keywords": ["charts", "graphs"],
-    "homepage": "http://github.com/zoopcommerce/google-bar-chart",
+    "homepage": "http://github.com/zoopcommerce/mirage",
     "license": "MIT",
     "authors": [
         {

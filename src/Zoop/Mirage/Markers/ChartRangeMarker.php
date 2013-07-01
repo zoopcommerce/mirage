@@ -10,7 +10,9 @@
  * For the full copyright and license information, please view the LICENSE file.
  */
 
-include_once dirname(__FILE__).'/../ChartMarker.php';
+namespace Zoop\Mirage\Markers;
+
+use Zoop\Mirage\ChartMarker;
 
 /**
  * A Range marker.
@@ -23,17 +25,17 @@ include_once dirname(__FILE__).'/../ChartMarker.php';
  * @see ChartMarker
  * @see http://code.google.com/apis/chart/docs/chart_params.html#gcharts_range_markers
  */
-class ChartRangeMarker extends ChartMarker
-{
-	/**
-	 * Compute the parameter value.
-	 *
-	 * @note For internal use only.
-	 * @param $index (int) index of the data serie.
-	 * @return string
-	 */
-	public function compute($index)
-	{
-		
-	}
+class ChartRangeMarker extends ChartMarker {
+
+    /**
+     * Compute the parameter value.
+     *
+     * @note For internal use only.
+     * @param $index (int) index of the data serie.
+     * @return string
+     */
+    public function compute($index) {
+        
+    }
+
 }

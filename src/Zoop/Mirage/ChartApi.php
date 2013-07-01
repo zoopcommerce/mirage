@@ -10,7 +10,7 @@
  * For the full copyright and license information, please view the LICENSE file.
  */
 
-namespace Zoop\Google\ImageCharts;
+namespace Zoop\Mirage;
 
 /**
  * Basic feature to query the API.
